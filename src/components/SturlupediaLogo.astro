@@ -1,0 +1,17 @@
+---
+const { fontsize } = Astro.props;
+---
+<div class="sturlupedialogo"><span class="spl_taller">S</span>turlupedi<span class="spl_taller">a</span></div>
+
+<style define:vars={{ fontsize }}>
+    .sturlupedialogo {
+        font-family: "Crimson Text", serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: var(--fontsize);
+    }
+    .spl_taller {
+        font-size: calc(var(--fontsize)*3/2);
+        font-weight: 400;
+    }
+</style>

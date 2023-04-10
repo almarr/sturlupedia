@@ -1,0 +1,27 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import SturlupediaLogo from '../components/SturlupediaLogo.astro';
+const { pageTitle, image } = Astro.props;
+---
+<BaseLayout pageTitle={pageTitle}>
+    <div class="wiki_site">
+        <div class="nav_sidebar">
+            <SturlupediaLogo fontsize="1rem"/>
+        </div>
+
+        <div class="main">
+            <div class="header_image">
+                <img src={image} alt={pageTitle}>
+                <div class="title_box">
+                    <h1 class="wiki_title">{pageTitle}</h1>
+                </div>
+            </div>
+            <div class="main_grid">
+                <div class="main_text">
+                    <slot />
+                </div>
+                <div class="info_sidebar"></div>
+            </div>
+        </div>
+    </div>
+</BaseLayout>
