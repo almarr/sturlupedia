@@ -24,8 +24,8 @@ const { pageTitle, image, overview, chapters } = Astro.props;
             </div>
             <div class="main_grid">
                 <div class="main_text">
-                    <section id="overview">
-                        <p>{overview}</p>
+                    <section id="Overview">
+                        <p><Fragment set:html={overview} /></p>
                     </section>
                 {chapters.map((chapter) => (
                     <section id={chapter.id}>
@@ -40,8 +40,9 @@ const { pageTitle, image, overview, chapters } = Astro.props;
                     </section>
                 ))}
                 </div>
-                
-                <slot />
+                <div class="info_sidebar">
+                    <slot />
+                </div>
             </div>
         </div>
     </div>

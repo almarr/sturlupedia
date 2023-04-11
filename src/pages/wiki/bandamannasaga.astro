@@ -3,7 +3,7 @@ import WikiLayout from "../../layouts/WikiLayout.astro";
 
 const pageTitle="Bandamannasaga";
 const image="/bandamannasaga.png";
-const overview = "Ófeigur and Odd, a father and son duo, find themselves entangled in a series of legal disputes and family tensions in medieval Iceland. As Odd becomes a wealthy and influential figure, Ófeigur helps him navigate legal challenges, arrange a beneficial marriage, and protect his wealth. In the end, Odd enjoys a prosperous life, while his enemies, including Óspakur, meet tragic fates.";
+const overview = "<a href='/wiki/ofeigur'>Ófeigur</a> and <a href='/wiki/oddur'>Odd</a>, a father and son duo, find themselves entangled in a series of legal disputes and family tensions in medieval Iceland. As Odd becomes a wealthy and influential figure, Ófeigur helps him navigate legal challenges, arrange a beneficial marriage, and protect his wealth. In the end, Odd enjoys a prosperous life, while his enemies, including <a href='/wiki/ospakur'>Óspakur</a>, meet tragic fates.";
 const chapters=[
     {
         id:"Summary", 
@@ -114,46 +114,44 @@ const chapters=[
     ];
 ---
 <WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
-    <div class="info_sidebar">
-        <h4>Families</h4>
-        <div class="family_trees">
-            <div class="family_tree">Ófeigur ──┬── Þorgerður
-          │
-        Oddur ───── Ragnheiður</div>
-            <div class="family_tree">Glúmur ──┬── Þórdís
-         │
-      Óspakur ───── Svala</div>
-            <div class="family_tree">Gellir Þorkelsson ──┬
-                    │
-                Ragnheiður ───── Oddur</div>
-            <div class="family_tree">Þórarinn
+    <h4>Families</h4>
+    <div class="family_trees">
+        <div class="family_tree">Ófeigur ──┬── Þorgerður
+        │
+    Oddur ───── Ragnheiður</div>
+        <div class="family_tree">Glúmur ──┬── Þórdís
+        │
+    Óspakur ───── Svala</div>
+        <div class="family_tree">Gellir Þorkelsson ──┬
+                │
+            Ragnheiður ───── Oddur</div>
+        <div class="family_tree">Þórarinn
 Langdælagoði ──┬
-               │
-             Svala ───── Óspakur</div>
-        </div>
-        <h4>Locations</h4>
-        <div class="sidebar_table">
-            <div class="attr">Miðfirði</div>
-            <div class="val">The region where Oddur's family resides and where he establishes his prosperous farm</div>
+            │
+            Svala ───── Óspakur</div>
+    </div>
+    <h4>Locations</h4>
+    <div class="sidebar_table">
+        <div class="attr">Miðfirði</div>
+        <div class="val">The region where Oddur's family resides and where he establishes his prosperous farm</div>
 
-            <div class="attr">Mel</div>
-            <div class="val">The farm established by Oddur</div>
+        <div class="attr">Mel</div>
+        <div class="val">The farm established by Oddur</div>
 
-            <div class="attr">Skriðinsenni</div>
-            <div class="val">The place where Óspakur's family lives</div>
+        <div class="attr">Skriðinsenni</div>
+        <div class="val">The place where Óspakur's family lives</div>
 
-            <div class="attr">Víðidal</div>
-            <div class="val">The location where Óspakur meets Svala and settles on a farm</div>
+        <div class="attr">Víðidal</div>
+        <div class="val">The location where Óspakur meets Svala and settles on a farm</div>
 
-            <div class="attr">Þorgeirsfjörð</div>
-            <div class="val">The fjord where Oddur and his crew sail to and from during their journey</div>
+        <div class="attr">Þorgeirsfjörð</div>
+        <div class="val">The fjord where Oddur and his crew sail to and from during their journey</div>
 
-            <div class="attr">Orkney</div>
-            <div class="val">The islands where Oddur purchases malt and grain for his journey</div>
+        <div class="attr">Orkney</div>
+        <div class="val">The islands where Oddur purchases malt and grain for his journey</div>
 
-            <div class="attr">Borg</div>
-            <div class="val">The home of Egill Skúlason</div>
-        </div>
+        <div class="attr">Borg</div>
+        <div class="val">The home of Egill Skúlason</div>
     </div>
 
 </WikiLayout>
