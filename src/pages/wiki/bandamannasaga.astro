@@ -3,132 +3,117 @@ import WikiLayout from "../../layouts/WikiLayout.astro";
 
 const pageTitle="Bandamannasaga";
 const image="/bandamannasaga.png";
+const overview = "Ófeigur and Odd, a father and son duo, find themselves entangled in a series of legal disputes and family tensions in medieval Iceland. As Odd becomes a wealthy and influential figure, Ófeigur helps him navigate legal challenges, arrange a beneficial marriage, and protect his wealth. In the end, Odd enjoys a prosperous life, while his enemies, including Óspakur, meet tragic fates.";
 const chapters=[
-    {url:"#Summary", name:"Summary", subsections:[]},
-    {url:"#Main_characters", name:"Main characters", subsections:[]},
-    {url:"#Chapter_summaries", name:"Chapter summaries", subsections:[
-        {url:"#Chapter_1", name:"Chapter 1"},
-        {url:"#Chapter_2", name:"Chapter 2"},
-        {url:"#Chapter_3", name:"Chapter 3"},
-        {url:"#Chapter_4", name:"Chapter 4"},
-        {url:"#Chapter_5", name:"Chapter 5"},
-        {url:"#Chapter_6", name:"Chapter 6"},
-        {url:"#Chapter_7", name:"Chapter 7"},
-        {url:"#Chapter_8", name:"Chapter 8"},
-        {url:"#Chapter_9", name:"Chapter 9"},
-        {url:"#Chapter_10", name:"Chapter 10"},
-        {url:"#Chapter_11", name:"Chapter 11"},
-        {url:"#Chapter_12", name:"Chapter 12"},
+    {
+        id:"Summary", 
+        name:"Summary", 
+        text:[
+        "Ófeigur, a wise and influential man, has a strained relationship with his intelligent son, Odd. Odd leaves home with little support from his father and eventually becomes a successful trader and one of the wealthiest men in Iceland. Ófeigur helps Odd navigate legal disputes and establishes a stronger bond with him. Odd finds an ally in Óspakur, but their relationship deteriorates, leading to tension and legal battles.",
+
+        "Odd's wealth attracts the attention of rival chieftains who seek to seize his assets. Ófeigur intervenes, offering his guidance in legal proceedings and connecting Odd with powerful allies, such as Gellir and Egill. As a result, Odd is able to protect his wealth and secure a beneficial marriage to Gellir's daughter, Ragnheiður.",
+
+        "Tensions rise as Hermund and other chieftains challenge Odd in a legal trial at Lögberg. Ófeigur negotiates a settlement, but it results in heated arguments and unresolved tensions among the parties involved. Despite this, Odd's resourcefulness and determination are admired by many.",
+
+        "In the end, Odd enjoys a prosperous life with his wife, while his enemies face tragic fates. Óspakur, suspected of killing Odd's prized horses, is found dead in a cave. The friendship between the families of Odd and his allies remains strong, and many great men descend from him. The saga comes to a close, showcasing the importance of wisdom, loyalty, and resourcefulness in medieval Icelandic society."
+        ],
+        subsections:[]
+    },
+    {
+        id:"Main_characters", 
+        name:"Main characters",
+        text:[
+            "<ul>" +
+                "<li><b>Ófeigur</b> - A wise and influential man, father of Oddur</li>" +
+                "<li><b>Þorgerður</b> - Ófeigur&apos;s wife, of noble lineage</li></li>" +
+                "<li><b>Oddur</b> - Intelligent and well-educated son of Ófeigur and Þorgerður, who becomes a wealthy trader and chieftain</li>" +
+                "<li><b>Vali</b> - Oddur&apos;s relative who stays with him both in Iceland and abroad</li>" +
+                "<li><b>Glúmur</b> - A man who lives in Skriðinsenni</li>" +
+                "<li><b>Þórdís</b> - Glúmur&apos;s wife</li>" +
+                "<li><b>Óspakur</b> - Son of Glúmur and Þórdís, who is strong and resourceful but has a dubious reputation</li>" +
+                "<li><b>Svala</b> - A woman who grows fond of Óspakur and introduces him to Þórarinn Langdælagoði</li>" +
+                "<li><b>Þórarinn Langdælagoði</b> - Svala&apos;s guardian, who is initially skeptical of Óspakur&apos;s intentions</li>" +
+                "<li><b>Styrmir</b> - A chieftain who challenges Oddur during the manslaughter case</li>" +
+                "<li><b>Hermundur</b> - One of the eight chieftains allied against Oddur</li>" +
+                "<li><b>Gellir Þorkelsson</b> - A chieftain who eventually supports Oddur and offers his daughter Ragnheiður in marriage</li>" +
+                "<li><b>Egill Skúlason</b> - Another chieftain who supports Oddur, helping with the legal case and eventually becomes his friend</li>" +
+                "<li><b>Ragnheiður</b> - Gellir&apos;s daughter, who marries Oddur</li>" +
+                "<li><b>Már</b> - A man who marries Svala</li>" +
+                "<li><b>Bjálfi</b> - A man injured by Óspakur</li>" +
+                "<li><b>Snorri Kálfsson</b> - A great man descended from Oddur</li>" +
+            "</ul>"
+            ],
+        subsections:[]
+    },
+    {
+        id:"Chapter_summaries", 
+        name:"Chapter summaries", 
+        text:[],
+        subsections:[
+            {   
+                id:"Chapter_1", 
+                name:"Chapter 1",
+                text:"Ófeigur, a wise and influential man, lived in Miðfirði with his wife Þorgerður, who was of noble lineage. They had a son named Oddur, who was intelligent and well-educated but did not receive much love from his father. Oddur asked his father for financial support to leave home, but Ófeigur offered little assistance. Oddur left home without saying goodbye, went fishing for three years, and paid off his debts while making a profit. He then became a successful trader, eventually owning ships and becoming very wealthy. Oddur gained the respect of chieftains and nobles abroad, yet he never visited his father, and they acted as if they had no obligation to each other."
+            },
+            {   
+                id:"Chapter_2", 
+                name:"Chapter 2",
+                text:"Oddur, now a wealthy man, settled in Miðfirði and established a prosperous farm at Mel. He was considered one of the wealthiest men in Iceland, owning vast amounts of land, livestock, gold, and silver. His relative Vali stayed with him both in Iceland and abroad. Meanwhile, a man named Glúmur lived in Skriðinsenni with his wife Þórdís and their son Óspakur, who was strong and resourceful but had a dubious reputation. Óspakur approached Oddur, asking to join his household, and Oddur agreed to give him a chance. Óspakur proved himself a hard worker, and Oddur appreciated his efforts. Oddur's farm flourished, but people felt he lacked one thing: a chieftainship. Oddur decided to establish a new chieftainship or purchase one, quickly gathering followers who were eager to support him."
+            },
+            {   
+                id:"Chapter_3", 
+                name:"Chapter 3",
+                text:"Oddur found himself pleased with Óspakur's work on the farm and entrusted him with more responsibility. As summer approached, Oddur announced his plans to go abroad and initially asked Vali to manage the farm in his absence, but Vali preferred to handle their finances and trade. Oddur then asked Óspakur, who hesitated but agreed on the condition of Oddur's guidance and trust. Óspakur took over the chieftainship, and people spoke much about this decision. During the summer, Óspakur attended the assembly and handled his duties well, earning respect from others. He managed the farm and livestock efficiently, maintaining the farm's prosperity. Oddur's journey abroad was successful, while Óspakur continued to take care of the farm and its affairs."
+            },
+            {   
+                id:"Chapter_4", 
+                name:"Chapter 4",
+                text:"Óspakur arrives in Víðidal and is well-received by a woman named Svala. They grow fond of each other, and she introduces him to Þórarinn Langdælagoði, her guardian. Óspakur asks for her hand in marriage, but Þórarinn is skeptical of his intentions. Óspakur and Svala eventually marry and settle on a farm. Oddur returns home and offers Óspakur his priesthood, which he initially accepts but later surrenders to Oddur. Oddur suspects Óspakur of stealing his sheep and confides in his kinsman Vali. Vali visits Óspakur and proposes a plan to clear his name, but Óspakur refuses. Vali returns to Oddur and shares his suspicions, but Oddur remains uncertain. Tensions between Óspakur and Oddur continue, and Oddur gathers men to confront Óspakur at his farm."
+            },
+            {   
+                id:"Chapter_5", 
+                name:"Chapter 5",
+                text:"Oddur brings the manslaughter case to court and calls the required men. One man dies and Oddur replaces him. The court proceedings are initially quiet, but Oddur presents the manslaughter case and is offered a defense. The chieftains Styrmir and Þórarinn discuss whether to offer any response to the case. Þórarinn is reluctant, but Styrmir insists that Oddur should be challenged. Styrmir interrupts the court, claiming that Oddur has prepared the case improperly by summoning the men from home instead of at the court. Oddur realizes the mistake and leaves the court. On his way out, he meets his father, Ófeigur, who scolds him for his arrogance and mismanagement of the case. Ófeigur offers to help, but only if Oddur pays him a large sum. Oddur agrees and hands over the money, and Ófeigur asks if the legal defense was presented. Oddur says they left the court before it happened, and Ófeigur says that was the only wise thing he did unknowingly. They part ways, and Oddur returns to his booth."
+            },
+            {   
+                id:"Chapter_6", 
+                name:"Chapter 6",
+                text:"Ófeigur approaches the judges and asks about the progress of the cases, including his son Odd's case. He is told that some cases have been resolved, while others are waiting for a verdict. Odd's case has not been concluded, but a defense has been found. Ófeigur questions the judges about the defense, expressing his dissatisfaction with their decision. He argues that Óspakur should be found guilty and punished, as he is a thief and a murderer. Ófeigur then offers the judges silver, which they accept, in exchange for declaring Óspakur guilty. Odd announces Óspakur's guilt the following morning, describing him as a tall, strong man with brown hair and a villainous appearance. People are surprised by the news, as many hadn't heard about the case before, and they admire Odd's determination and resourcefulness."
+            },
+            {   
+                id:"Chapter_7", 
+                name:"Chapter 7",
+                text:"Styrmir and Þórarinn feel humiliated and dishonored, so they gather their allies for a meeting to discuss how to respond. The group of eight, including Hermundur, Gellir, Egill, Járnskeggi, Skegg-Broddi, Þorgeir, Styrmir, and Þórarinn, decide to commit to pursuing the case so that either fines or self-judgment will be applied. They strengthen their alliance with oaths, and everyone leaves the assembly. Meanwhile, Oddur and Ófeigur's relationship grows stronger. Ófeigur informs Oddur about Styrmir and Þórarinn's intentions, but Oddur doesn't worry. When Styrmir and Þórarinn arrive at Mel with a large group, they formally charge Oddur for breaking the law by having the money brought to the court. Oddur still isn't worried, even when Ófeigur tells him that six other chieftains have joined Styrmir and Þórarinn's cause. Ófeigur suggests Oddur prepare his ship and gather his movable possessions before the assembly rides away, offering Oddur the choice between the money that the opponents might take from him or the wealth Ófeigur has. Oddur chooses his father's wealth, and they part ways. Oddur prepares his ship and recruits men, keeping these plans quiet so few people know."
+            },
+            {   
+                id:"Chapter_8", 
+                name:"Chapter 8",
+                text:"In this part of the story, the chieftains and their followers ride to the assembly, where the case of Odd is being discussed. Odd, who has not asked anyone for help, is preparing his ship in Hrútafjörður. One day, Ófeigur, who is in Styrmir's group, becomes very worried and seeks out Egill Skúlason. Ófeigur wants to discuss Odd's case with Egill, but Egill says there's nothing he can do and suggests talking to Styrmir or Þórarinn instead. Ófeigur speaks verses to Egill and they discuss the matter of Odd's wealth. Egill is surprised to learn that the chieftains expect to get only half of Odd's wealth, while Ófeigur reveals that Odd is likely at sea with all his property except Mel's land. Ófeigur believes that the chieftains will face shame and disgrace for their actions. Ófeigur then offers Egill two hundred silver coins to not oppose the case, but Egill refuses. Ófeigur criticizes the chieftains for not being able to handle difficult situations and says he will find a way to ensure Egill keeps his honor."
+            },
+            {   
+                id:"Chapter_9", 
+                name:"Chapter 9",
+                text:"Ófeigur leaves Egill and visits Gellir Þorkelsson, discussing potential powerful people and marriages in the region. Ófeigur brings up the topic of Oddur, his son, marrying Gellir's daughter, Ragnheiður. Gellir is hesitant due to Oddur's ongoing legal issues. Ófeigur convinces Gellir of Oddur's worthiness, and they agree to move forward with the marriage if Ófeigur can find another person to help with the legal case. They choose Egill to assist, and Ófeigur shares the plan with Egill. The three men meet and agree to the plan during a church service, without raising suspicion from others."
+            },
+            {   
+                id:"Chapter_10", 
+                name:"Chapter 10",
+                text:"At Lögberg, a large crowd gathers for Odd's trial. Ófeigur suggests a settlement, but Hermund insists on following precedent. Eventually, they compromise with two representatives as judges, Gellir and Egill. After privately discussing the case, they settle on thirteen ounces of silver. However, when the decision is presented, Hermund and others feel deceived, leading to heated arguments and unresolved tensions. The settlement money is unwanted, and the men ride home from the assembly."
+            },
+            {   
+                id:"Chapter_11", 
+                name:"Chapter 11",
+                text:"Odd and Ófeigur, now ready for their journey, discuss the self-rule that Ófeigur has arranged for them. Ófeigur also mentions that he has found Odd a wife, and thanks Odd for his support, promising he'll never lack wealth. They part with love, and Odd sets sail to Þorgeirsfjörð, where they encounter other merchants. Odd climbs a high mountain to get a better view of the weather and advises his crew to move out of the fjord. They reach Orkney, where Odd purchases malt and grain, and prepares his ship for the journey. They sail with favorable winds and return to Þorgeirsfjörð. Odd's wedding feast is magnificent, attended by many including Gellir and Egill. After the feast, Gellir advises Odd to treat Egill well, to which Odd agrees. Gellir and his people depart, followed by Egill. Odd sees Egill off, thanking him for his help and offering him sixty geldings and two oxen. The two friends part on good terms, and Egill returns home to Borg."
+            },
+            {   
+                id:"Chapter_12", 
+                name:"Chapter 12",
+                text:"Hermundur gathers his men to attack Egil at Borg, but as they approach Valfell, Hermundur falls ill and is forced to abandon the mission. He dies, uttering cryptic words before passing. Odd enjoys a prosperous life with his wife, while Óspakur remains unaccounted for. Már, who married Svála, is killed by Óspakur. Óspakur also injures Bjálfi before disappearing. Odd's prized horses are found dead, and Óspakur is suspected. Later, Óspakur's body is found in a cave with a blood-filled bowl beside him. It's believed that the injury Bjálfi inflicted on him led to his death. No further incidents occur related to Már's or Óspakur's deaths. Odd lives a long life, and many great men are descended from him, including Snorri Kálfsson. The friendship between the families remains strong, and the story comes to an end."
+            },
     ]},
     ];
 ---
-<WikiLayout pageTitle={pageTitle} image={image} chapters={chapters}>
-    <div class="main_text">
-        <section id="Overview">
-            <p>Ófeigur and Odd, a father and son duo, find themselves entangled in a series of legal disputes and family tensions in medieval Iceland. As Odd becomes a wealthy and influential figure, Ófeigur helps him navigate legal challenges, arrange a beneficial marriage, and protect his wealth. In the end, Odd enjoys a prosperous life, while his enemies, including Óspakur, meet tragic fates.</p>
-        </section>
-
-        <section id="Summary">
-            <h2>Summary</h2>
-            
-            <p>Ófeigur, a wise and influential man, has a strained relationship with his intelligent son, Odd. Odd leaves home with little support from his father and eventually becomes a successful trader and one of the wealthiest men in Iceland. Ófeigur helps Odd navigate legal disputes and establishes a stronger bond with him. Odd finds an ally in Óspakur, but their relationship deteriorates, leading to tension and legal battles.</p>
-
-            <p>Odd's wealth attracts the attention of rival chieftains who seek to seize his assets. Ófeigur intervenes, offering his guidance in legal proceedings and connecting Odd with powerful allies, such as Gellir and Egill. As a result, Odd is able to protect his wealth and secure a beneficial marriage to Gellir's daughter, Ragnheiður.</p>
-
-            <p>Tensions rise as Hermund and other chieftains challenge Odd in a legal trial at Lögberg. Ófeigur negotiates a settlement, but it results in heated arguments and unresolved tensions among the parties involved. Despite this, Odd's resourcefulness and determination are admired by many.</p>
-
-            <p>In the end, Odd enjoys a prosperous life with his wife, while his enemies face tragic fates. Óspakur, suspected of killing Odd's prized horses, is found dead in a cave. The friendship between the families of Odd and his allies remains strong, and many great men descend from him. The saga comes to a close, showcasing the importance of wisdom, loyalty, and resourcefulness in medieval Icelandic society.</p>
-        </section>
-
-        <section id="Main_characters">
-            <h2>Main characters</h2>
-
-            <ul>
-                <li><b>Ófeigur</b> - A wise and influential man, father of Oddur</li>
-                <li><b>Þorgerður</b> - Ófeigur's wife, of noble lineage</li>
-                <li><b>Oddur</b> - Intelligent and well-educated son of Ófeigur and Þorgerður, who becomes a wealthy trader and chieftain</li>
-                <li><b>Vali</b> - Oddur's relative who stays with him both in Iceland and abroad</li>
-                <li><b>Glúmur</b> - A man who lives in Skriðinsenni</li>
-                <li><b>Þórdís</b> - Glúmur's wife</li>
-                <li><b>Óspakur</b> - Son of Glúmur and Þórdís, who is strong and resourceful but has a dubious reputation</li>
-                <li><b>Svala</b> - A woman who grows fond of Óspakur and introduces him to Þórarinn Langdælagoði</li>
-                <li><b>Þórarinn Langdælagoði</b> - Svala's guardian, who is initially skeptical of Óspakur's intentions</li>
-                <li><b>Styrmir</b> - A chieftain who challenges Oddur during the manslaughter case</li>
-                <li><b>Hermundur</b> - One of the eight chieftains allied against Oddur</li>
-                <li><b>Gellir Þorkelsson</b> - A chieftain who eventually supports Oddur and offers his daughter Ragnheiður in marriage</li>
-                <li><b>Egill Skúlason</b> - Another chieftain who supports Oddur, helping with the legal case and eventually becomes his friend</li>
-                <li><b>Ragnheiður</b> - Gellir's daughter, who marries Oddur</li>
-                <li><b>Már</b> - A man who marries Svala</li>
-                <li><b>Bjálfi</b> - A man injured by Óspakur</li>
-                <li><b>Snorri Kálfsson</b> - A great man descended from Oddur</li>
-            </ul>
-        </section>
-
-        <section id="Chapter_summaries">
-            <h2>Chapter summaries</h2>
-
-            <section id="Chapter_1">
-                <h3>Chapter 1</h3>
-                <p>Ófeigur, a wise and influential man, lived in Miðfirði with his wife Þorgerður, who was of noble lineage. They had a son named Oddur, who was intelligent and well-educated but did not receive much love from his father. Oddur asked his father for financial support to leave home, but Ófeigur offered little assistance. Oddur left home without saying goodbye, went fishing for three years, and paid off his debts while making a profit. He then became a successful trader, eventually owning ships and becoming very wealthy. Oddur gained the respect of chieftains and nobles abroad, yet he never visited his father, and they acted as if they had no obligation to each other.</p>
-            </section>
-
-            <section id="Chapter_2">
-                <h3>Chapter 2</h3>
-                <p>Oddur, now a wealthy man, settled in Miðfirði and established a prosperous farm at Mel. He was considered one of the wealthiest men in Iceland, owning vast amounts of land, livestock, gold, and silver. His relative Vali stayed with him both in Iceland and abroad. Meanwhile, a man named Glúmur lived in Skriðinsenni with his wife Þórdís and their son Óspakur, who was strong and resourceful but had a dubious reputation. Óspakur approached Oddur, asking to join his household, and Oddur agreed to give him a chance. Óspakur proved himself a hard worker, and Oddur appreciated his efforts. Oddur's farm flourished, but people felt he lacked one thing: a chieftainship. Oddur decided to establish a new chieftainship or purchase one, quickly gathering followers who were eager to support him.</p>
-            </section>
-
-            <section id="Chapter_3">
-                <h3>Chapter 3</h3>
-                <p>Oddur found himself pleased with Óspakur's work on the farm and entrusted him with more responsibility. As summer approached, Oddur announced his plans to go abroad and initially asked Vali to manage the farm in his absence, but Vali preferred to handle their finances and trade. Oddur then asked Óspakur, who hesitated but agreed on the condition of Oddur's guidance and trust. Óspakur took over the chieftainship, and people spoke much about this decision. During the summer, Óspakur attended the assembly and handled his duties well, earning respect from others. He managed the farm and livestock efficiently, maintaining the farm's prosperity. Oddur's journey abroad was successful, while Óspakur continued to take care of the farm and its affairs.</p>
-            </section>
-
-            <section id="Chapter_4">
-                <h3>Chapter 4</h3>
-                <p>Óspakur arrives in Víðidal and is well-received by a woman named Svala. They grow fond of each other, and she introduces him to Þórarinn Langdælagoði, her guardian. Óspakur asks for her hand in marriage, but Þórarinn is skeptical of his intentions. Óspakur and Svala eventually marry and settle on a farm. Oddur returns home and offers Óspakur his priesthood, which he initially accepts but later surrenders to Oddur. Oddur suspects Óspakur of stealing his sheep and confides in his kinsman Vali. Vali visits Óspakur and proposes a plan to clear his name, but Óspakur refuses. Vali returns to Oddur and shares his suspicions, but Oddur remains uncertain. Tensions between Óspakur and Oddur continue, and Oddur gathers men to confront Óspakur at his farm.</p>
-            </section>
-
-            <section id="Chapter_5">
-                <h3>Chapter 5</h3>
-                <p>Oddur brings the manslaughter case to court and calls the required men. One man dies and Oddur replaces him. The court proceedings are initially quiet, but Oddur presents the manslaughter case and is offered a defense. The chieftains Styrmir and Þórarinn discuss whether to offer any response to the case. Þórarinn is reluctant, but Styrmir insists that Oddur should be challenged. Styrmir interrupts the court, claiming that Oddur has prepared the case improperly by summoning the men from home instead of at the court. Oddur realizes the mistake and leaves the court. On his way out, he meets his father, Ófeigur, who scolds him for his arrogance and mismanagement of the case. Ófeigur offers to help, but only if Oddur pays him a large sum. Oddur agrees and hands over the money, and Ófeigur asks if the legal defense was presented. Oddur says they left the court before it happened, and Ófeigur says that was the only wise thing he did unknowingly. They part ways, and Oddur returns to his booth.</p>
-            </section>
-
-            <section id="Chapter_6">
-                <h3>Chapter 6</h3>
-                <p>Ófeigur approaches the judges and asks about the progress of the cases, including his son Odd's case. He is told that some cases have been resolved, while others are waiting for a verdict. Odd's case has not been concluded, but a defense has been found. Ófeigur questions the judges about the defense, expressing his dissatisfaction with their decision. He argues that Óspakur should be found guilty and punished, as he is a thief and a murderer. Ófeigur then offers the judges silver, which they accept, in exchange for declaring Óspakur guilty. Odd announces Óspakur's guilt the following morning, describing him as a tall, strong man with brown hair and a villainous appearance. People are surprised by the news, as many hadn't heard about the case before, and they admire Odd's determination and resourcefulness.</p>
-            </section>
-
-            <section id="Chapter_7">
-                <h3>Chapter 7</h3>
-                <p>Styrmir and Þórarinn feel humiliated and dishonored, so they gather their allies for a meeting to discuss how to respond. The group of eight, including Hermundur, Gellir, Egill, Járnskeggi, Skegg-Broddi, Þorgeir, Styrmir, and Þórarinn, decide to commit to pursuing the case so that either fines or self-judgment will be applied. They strengthen their alliance with oaths, and everyone leaves the assembly. Meanwhile, Oddur and Ófeigur's relationship grows stronger. Ófeigur informs Oddur about Styrmir and Þórarinn's intentions, but Oddur doesn't worry. When Styrmir and Þórarinn arrive at Mel with a large group, they formally charge Oddur for breaking the law by having the money brought to the court. Oddur still isn't worried, even when Ófeigur tells him that six other chieftains have joined Styrmir and Þórarinn's cause. Ófeigur suggests Oddur prepare his ship and gather his movable possessions before the assembly rides away, offering Oddur the choice between the money that the opponents might take from him or the wealth Ófeigur has. Oddur chooses his father's wealth, and they part ways. Oddur prepares his ship and recruits men, keeping these plans quiet so few people know.</p>
-            </section>
-
-            <section id="Chapter_8">
-                <h3>Chapter 8</h3>
-                <p>In this part of the story, the chieftains and their followers ride to the assembly, where the case of Odd is being discussed. Odd, who has not asked anyone for help, is preparing his ship in Hrútafjörður. One day, Ófeigur, who is in Styrmir's group, becomes very worried and seeks out Egill Skúlason. Ófeigur wants to discuss Odd's case with Egill, but Egill says there's nothing he can do and suggests talking to Styrmir or Þórarinn instead. Ófeigur speaks verses to Egill and they discuss the matter of Odd's wealth. Egill is surprised to learn that the chieftains expect to get only half of Odd's wealth, while Ófeigur reveals that Odd is likely at sea with all his property except Mel's land. Ófeigur believes that the chieftains will face shame and disgrace for their actions. Ófeigur then offers Egill two hundred silver coins to not oppose the case, but Egill refuses. Ófeigur criticizes the chieftains for not being able to handle difficult situations and says he will find a way to ensure Egill keeps his honor.</p>
-            </section>
-
-            <section id="Chapter_9">
-                <h3>Chapter 9</h3>
-                <p>Ófeigur leaves Egill and visits Gellir Þorkelsson, discussing potential powerful people and marriages in the region. Ófeigur brings up the topic of Oddur, his son, marrying Gellir's daughter, Ragnheiður. Gellir is hesitant due to Oddur's ongoing legal issues. Ófeigur convinces Gellir of Oddur's worthiness, and they agree to move forward with the marriage if Ófeigur can find another person to help with the legal case. They choose Egill to assist, and Ófeigur shares the plan with Egill. The three men meet and agree to the plan during a church service, without raising suspicion from others.</p>
-            </section>
-
-            <section id="Chapter_10">
-                <h3>Chapter 10</h3>
-                <p>At Lögberg, a large crowd gathers for Odd's trial. Ófeigur suggests a settlement, but Hermund insists on following precedent. Eventually, they compromise with two representatives as judges, Gellir and Egill. After privately discussing the case, they settle on thirteen ounces of silver. However, when the decision is presented, Hermund and others feel deceived, leading to heated arguments and unresolved tensions. The settlement money is unwanted, and the men ride home from the assembly.</p>
-            </section>
-
-            <section id="Chapter_11">
-                <h3>Chapter 11</h3>
-                <p>Odd and Ófeigur, now ready for their journey, discuss the self-rule that Ófeigur has arranged for them. Ófeigur also mentions that he has found Odd a wife, and thanks Odd for his support, promising he'll never lack wealth. They part with love, and Odd sets sail to Þorgeirsfjörð, where they encounter other merchants. Odd climbs a high mountain to get a better view of the weather and advises his crew to move out of the fjord. They reach Orkney, where Odd purchases malt and grain, and prepares his ship for the journey. They sail with favorable winds and return to Þorgeirsfjörð. Odd's wedding feast is magnificent, attended by many including Gellir and Egill. After the feast, Gellir advises Odd to treat Egill well, to which Odd agrees. Gellir and his people depart, followed by Egill. Odd sees Egill off, thanking him for his help and offering him sixty geldings and two oxen. The two friends part on good terms, and Egill returns home to Borg.</p>
-            </section>
-
-            <section id="Chapter_12">
-                <h3>Chapter 12</h3>
-                <p>Hermundur gathers his men to attack Egil at Borg, but as they approach Valfell, Hermundur falls ill and is forced to abandon the mission. He dies, uttering cryptic words before passing. Odd enjoys a prosperous life with his wife, while Óspakur remains unaccounted for. Már, who married Svála, is killed by Óspakur. Óspakur also injures Bjálfi before disappearing. Odd's prized horses are found dead, and Óspakur is suspected. Later, Óspakur's body is found in a cave with a blood-filled bowl beside him. It's believed that the injury Bjálfi inflicted on him led to his death. No further incidents occur related to Már's or Óspakur's deaths. Odd lives a long life, and many great men are descended from him, including Snorri Kálfsson. The friendship between the families remains strong, and the story comes to an end.</p>
-            </section>
-        </section>
-    </div>
-
+<WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
     <div class="info_sidebar">
         <h4>Families</h4>
         <div class="family_trees">

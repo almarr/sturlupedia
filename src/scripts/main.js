@@ -1,6 +1,5 @@
 // Get all sections that have an ID defined
 const sections = document.querySelectorAll("section[id]");
-console.log(sections);
 
 // Add an event listener listening for scroll
 window.addEventListener("scroll", navHighlighter);
@@ -12,9 +11,12 @@ function navHighlighter() {
   
   // Now we loop through sections to get height, top and ID values for each
   sections.forEach(current => {
+    console.log(current);
     const sectionHeight = current.offsetHeight;
+    console.log(sectionHeight);
     const sectionTop = current.offsetTop - 50;
     const sectionId = current.getAttribute("id");
+    console.log(sectionId);
     
     /*
     - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
