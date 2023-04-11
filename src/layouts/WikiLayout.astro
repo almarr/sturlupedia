@@ -1,12 +1,18 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import SturlupediaLogo from '../components/SturlupediaLogo.astro';
-const { pageTitle, image } = Astro.props;
+const { pageTitle, image, chapters } = Astro.props;
 ---
 <BaseLayout pageTitle={pageTitle}>
     <div class="wiki_site">
         <div class="nav_sidebar">
-            <SturlupediaLogo fontsize="1rem"/>
+            <a href="/" class="logo_link"><SturlupediaLogo fontsize="1rem"/></a>
+            <div class="nav">
+                <a href="#Overview" class="chapter_link">Overview</a>
+                {chapters.map((chapter) => (
+                    <a href={chapter.url} class="chapter_link">{chapter.name}</a> <div>{chapter.subsections.map((subsection) => (<a href={subsection.url} class="subsection_link">{subsection.name}</a>))}</div>
+                ))}
+            </div>
         </div>
 
         <div class="main">
@@ -17,10 +23,7 @@ const { pageTitle, image } = Astro.props;
                 </div>
             </div>
             <div class="main_grid">
-                <div class="main_text">
                     <slot />
-                </div>
-                <div class="info_sidebar"></div>
             </div>
         </div>
     </div>
