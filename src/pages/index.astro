@@ -4,5 +4,66 @@ import SturlupediaLogo from '../components/SturlupediaLogo.astro';
 const pageTitle = "Sturlupedia";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h1><SturlupediaLogo fontsize='2rem'/></h1>
+  <div class="homepage_wrapper">
+    <img class="logo_img" src="/logo.png" alt="Logo">
+    <h1 class="frontpage_logo"><SturlupediaLogo fontsize='2rem'/></h1>
+      
+    <div class="saga">
+      <a href="/wiki/bandamannasaga">
+        <img src="/bandamannasaga.png" alt="Bandamannasaga">
+        <div class="saga_box">
+            <h2 class="saga_title">Bandamannasaga</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="saga">
+      <a href="/wiki/droplaugarsonasaga">
+        <img src="/droplaugarsonasaga.png" alt="Droplaugarmanna saga">
+        <div class="saga_box">
+            <h2 class="saga_title">Droplaugarmanna saga</h2>
+        </div>
+      </a>
+    </div>
+
+  </div>
 </BaseLayout>
+<style>
+  .homepage_wrapper{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frontpage_logo {
+    text-align: center;
+    margin-top: -0.8rem;
+    margin-bottom: 3rem;
+    line-height: 1;
+  }
+  .logo_img {
+    width: 100px;
+    margin-top: 1rem;
+  }
+
+  .saga {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .saga a{
+    color: white;
+  }
+
+  .saga_box {
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+    width: 100%;
+    line-height: 1;
+    padding-left: 2rem;
+    bottom: 4px;
+    left: 0rem;
+}
+</style>

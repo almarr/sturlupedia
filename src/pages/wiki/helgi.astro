@@ -1,0 +1,58 @@
+---
+import WikiLayout from "../../layouts/WikiLayout.astro";
+
+const pageTitle="Helgi Droplaugarson";
+const image="/helgi.png";
+const overview = "Helgi Droplaugarson is a central character in the Icelandic saga known as <a href='/wiki/droplaugarsonasaga'>Droplaugarsona saga</a>. He is the son of Ketill and Arneiður, and the brother of Grímur. Throughout the story, Helgi is involved in various conflicts, legal matters, and acts of revenge, making him a significant figure in the saga.";
+const chapters=[
+    {
+        id: "Early_life",
+        name: "Early Life",
+        text:["Helgi was born to Ketill and Arneiður, a couple who had settled in Iceland after Ketill purchased Arneiður's freedom from Véþormur. He had a brother named Grímur and a half-brother named Þiðrandi, who would later marry Yngveldur and have sons Ketill and Þorvaldur."],
+        subsections:[]
+    },
+    {
+        id: "Legal_and_social_disputes",
+        name: "Legal and social disputes",
+        text:[
+            "As a law student, Helgi took on various cases against Helgi Ásbjarnarson's allies. He becomes involved in a livestock dispute between Thorgeir and Thordur, where he sought compensation for Thorgeir. However, the final settlement leaves Helgi unsatisfied with the outcome.",
+
+            "Helgi also assists his relative Rannveig with a livestock dispute with her husband, Thorgrimur Skinnhufa, leading to a tense encounter between Helgi Droplaugarson and Helgi Ásbjarnarson at an assembly."
+        ],
+        subsections:[]
+    },
+    {
+        id: "Conflicts_and_revenge",
+        name: "Conflicts and revenge",
+        text:[
+            "After his brother Grímur is involved in the killing of Þorgrímur, Helgi Droplaugarson avenges his brother's death by attacking and fatally wounding Helgi Ásbjarnarson. He is later declared an outlaw and goes into hiding.",
+
+            "Grímur, in turn, seeks revenge for Helgi's death, attacking and fatally wounding Helgi Ásbjarnarson. Grímur is also declared an outlaw and ultimately meets a tragic end after being injured in a duel with a vicious Viking named Gaus."
+        ],
+        subsections:[]
+    },
+    {
+        id: "Legacy",
+        name: "Legacy",
+        text:["Helgi Droplaugarson is remembered as a brave and skilled warrior who was involved in various conflicts and legal matters throughout the saga. His story is intertwined with that of his brother Grímur, who also played a significant role in the events of the saga."],
+        subsections:[]
+    },
+];
+---
+<WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
+    <h4>Oddur Ófeigsson</h4>
+    <div class="sidebar_table">
+        <div class="attr">Story</div>
+        <div class="val"><a href="/wiki/droplaugarsonasaga">Droplaugarsona saga</a></div>
+
+        <div class="attr">Relatives</div>
+        <div class="val">Ketill (father), Arneiður (mother), Grímur (brother), Þiðrandi (half-brother), Ketill (nephew), Þorvaldur (nephew)</div>
+
+        <div class="attr">Occupation</div>
+        <div class="val">Farmer, Law student</div>
+
+        <div class="attr">Nationality</div>
+        <div class="val">Icelandic</div>
+    </div>
+
+</WikiLayout>

@@ -29,7 +29,7 @@ const { pageTitle, image, overview, chapters } = Astro.props;
                     </section>
                 {chapters.map((chapter) => (
                     <section id={chapter.id}>
-                        <h2>{chapter.name}</h2>
+                        <h2 class="wiki_chapter">{chapter.name}</h2>
                         {chapter.text.map((par) => <p><Fragment set:html={par} /></p>)}
                         {chapter.subsections.map((subsection) => (
                             <section id={subsection.id}>

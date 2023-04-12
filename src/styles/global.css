@@ -27,7 +27,7 @@ h2 {
     font-weight: 600;
 }
 
-h2::after {
+.wiki_chapter::after {
     content: '';
     display: block;
     height: 2px;
