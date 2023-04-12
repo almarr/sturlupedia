@@ -1,0 +1,67 @@
+---
+import WikiLayout from "../../layouts/WikiLayout.astro";
+
+const pageTitle="Óspakur Glúmsson";
+const image="/ospakur.png";
+const overview = "Óspakur is a character from an Icelandic saga, known for his strength, resourcefulness, and dubious reputation. He becomes a key figure in the saga when he joins the household of <a href='/wiki/oddur'>Oddur</a>, a wealthy Icelandic farmer and trader. Óspakur demonstrates his value by managing Oddur's farm efficiently, leading to Oddur's increased prosperity. However, he becomes embroiled in a legal dispute involving theft and manslaughter, which ultimately leads to his death.";
+const chapters=[
+    {
+        id: "Early_life",
+        name: "Early life",
+        text:["Little is known about Óspakur's early life. He lived in Skriðinsenni with his parents, Glúmur and Þórdís. He was strong and resourceful but had a dubious reputation."],
+        subsections:[]
+    },
+    {
+        id: "Joining_Oddurs_household",
+        name: "Joining Oddur's household",
+        text:["Óspakur approached Oddur and asked to join his household. Oddur agreed to give him a chance, and Óspakur proved himself to be a hard worker. As a result, Oddur's farm flourished, and Óspakur earned greater responsibility within the household."],
+        subsections:[]
+    },
+    {
+        id: "Chieftainship_and_marriage",
+        name: "Chieftainship and marriage",
+        text:["Oddur asked Óspakur to take over the chieftainship while he traveled abroad. Óspakur hesitated but agreed on the condition that he received Oddur's guidance and trust. He managed the farm and livestock efficiently and attended the assembly, where he earned respect from others. Óspakur met a woman named Svala in Víðidal and married her after receiving approval from her guardian, Þórarinn Langdælagoði."],
+        subsections:[]
+    },
+    {
+        id: "Legal_dispute_and_death",
+        name: "Legal dispute and death",
+        text:["Oddur accused Óspakur of stealing his sheep, leading to a complicated legal dispute involving several chieftains. <a href='/wiki/ofeigur'>Ófeigur</a>, Oddur's father, influenced the case by offering silver to judges in exchange for declaring Óspakur guilty. Tensions continued to escalate, and Óspakur eventually disappeared.",
+
+        "Már, who married Svála, was killed by Óspakur, and Óspakur also injured Bjálfi before disappearing once more. Oddur's prized horses were found dead, and Óspakur was suspected of the crime. Later, Óspakur's body was found in a cave with a blood-filled bowl beside him, likely due to the injury inflicted by Bjálfi. No further incidents occurred related to Már's or Óspakur's deaths."],
+        subsections:[]
+    },
+    {
+        id: "Legacy",
+        name: "Chieftainship and marriage",
+        text:["Óspakur's story is remembered as a tale of ambition, loyalty, and conflict. His actions significantly impacted the lives of Oddur, Ófeigur, and their contemporaries."],
+        subsections:[]
+    },
+];
+---
+<WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
+    <h4>Óspakur Glúmsson</h4>
+    <div class="sidebar_table">
+        <div class="attr">Story</div>
+        <div class="val"><a href="/wiki/bandamannasaga">Bandamannasaga</a></div>
+
+        <div class="attr">Occupation</div>
+        <div class="val">Farmer, Chieftain</div>
+
+        <div class="attr">Spouse</div>
+        <div class="val">Svala</div>
+
+        <div class="attr">Children</div>
+        <div class="val">None mentioned</div>
+
+        <div class="attr">Residence</div>
+        <div class="val">Víðidal, Iceland</div>
+
+        <div class="attr">Nationality</div>
+        <div class="val">Icelandic</div>
+
+        <div class="attr">Notable events</div>
+        <div class="val">Joining <a href='/wiki/oddur'>Oddur's</a> household, managing Oddur's farm, marrying Svala, giving up chieftainship, accused of theft and manslaughter, his death</div>
+    </div>
+
+</WikiLayout>

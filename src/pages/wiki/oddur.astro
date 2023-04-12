@@ -1,0 +1,52 @@
+---
+import WikiLayout from "../../layouts/WikiLayout.astro";
+
+const pageTitle="Oddur Ófeigsson";
+const image="/oddur.png";
+const overview = "Oddur was a prominent Icelandic trader, landowner, and chieftain who lived during the Viking Age. He was born in Miðfirði, Iceland, to parents <a href='/wiki/ofeigur'>Ófeigur</a>, a wise and influential man, and Þorgerður, a noblewoman. Despite not receiving much love or support from his father, Oddur went on to become a successful trader, eventually owning ships and accumulating vast wealth. He settled in Miðfirði and established a prosperous farm at Mel.";
+const chapters=[
+    {
+        id: "Early_life",
+        name: "Early Life",
+        text:["Oddur grew up in a well-respected family in Miðfirði, but his father Ófeigur showed him little love. When he asked for financial support to leave home, his father offered only meager assistance. Undeterred, Oddur left home without saying goodbye and went fishing for three years, eventually paying off his debts and turning a profit. He then transitioned into trade, becoming a successful and wealthy trader with ships and connections to nobles and chieftains abroad. Despite his success, he and his father remained estranged."],
+        subsections:[]
+    },
+    {
+        id: "Mel_Farm_and_Chieftainship",
+        name: "Mel Farm and Chieftainship",
+        text:["Oddur established a prosperous farm at Mel, where he became one of the wealthiest men in Iceland. He was joined by his relative Vali and <a href='/wiki/ospakur'>Óspakur</a>, a resourceful but controversial man. Oddur's farm flourished, and he gained many followers who supported his ambition to establish or purchase a chieftainship. In Oddur's absence, Óspakur took over the chieftainship and managed the farm, earning the respect of others."],
+        subsections:[]
+    },
+    {
+        id: "Marriage_and_Legal_Troubles",
+        name: "Marriage and Legal Troubles",
+        text:["Oddur married Ragnheiður Gellirsdóttir after a complicated legal case involving Óspakur. With the help of his father and powerful allies, including Gellir Þorkelsson and Egill Skúlason, he managed to resolve the case by paying thirteen ounces of silver. Despite tensions and conflicts, Oddur maintained friendships and alliances with influential people."],
+        subsections:[]
+    },{
+        id: "Later_Life_and_Legacy",
+        name: "Later Life and Legacy",
+        text:["Oddur went on to live a long and prosperous life with his wife, Ragnheiður. Their descendants included many great men, such as Snorri Kálfsson. The friendship between the families involved in Oddur's life remained strong, and his story is remembered as an example of determination, resourcefulness, and ambition."],
+        subsections:[]
+    },
+];
+---
+<WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
+    <h4>Oddur Ófeigsson</h4>
+    <div class="sidebar_table">
+        <div class="attr">Story</div>
+        <div class="val"><a href="/wiki/bandamannasaga">Bandamannasaga</a></div>
+
+        <div class="attr">Birthplace</div>
+        <div class="val">Miðfirði, Iceland</div>
+
+        <div class="attr">Parents</div>
+        <div class="val"><a href="/wiki/ofeigur">Ófeigur</a> and Þorgerður</div>
+
+        <div class="attr">Spouse</div>
+        <div class="val">Ragnheiður Gellirsdóttir</div>
+
+        <div class="attr">Occupation</div>
+        <div class="val">Trader, landowner, chieftain</div>
+    </div>
+
+</WikiLayout>

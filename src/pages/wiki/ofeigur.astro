@@ -1,0 +1,55 @@
+---
+import WikiLayout from "../../layouts/WikiLayout.astro";
+
+const pageTitle="Ófeigur Skíðason";
+const image="/ofeigur.png";
+const overview = "Ófeigur is a character featured in an Icelandic saga, where he is depicted as a wise and influential man who lives in Miðfirði with his wife Þorgerður, who is of noble lineage. Ófeigur's story revolves around his relationship with his son, <a href='/wiki/oddur'>Oddur</a>, and the various trials and tribulations they face in their lives. Ófeigur plays a crucial role in the resolution of legal disputes and the development of alliances between families, displaying his wisdom and cunning throughout the saga.";
+const chapters=[
+    {
+        id: "Family",
+        name: "Family",
+        text:["Ófeigur is married to Þorgerður, who comes from a noble lineage. They have a son named Oddur, who is intelligent and well-educated. Despite Oddur's achievements and success, Ófeigur does not initially show much love and support for his son. However, their relationship improves over time, and they ultimately work together to face various challenges."],
+        subsections:[]
+    },
+    {
+        id: "Role_in_the_Saga",
+        name: "Role in the Saga",
+        text:["In the story, Ófeigur's son Oddur leaves home to become a successful trader and amass considerable wealth. When Oddur returns to Miðfirði, he establishes a prosperous farm and aspires to become a chieftain. Ófeigur plays a significant role in resolving legal disputes involving Oddur and other characters, such as <a href='/wiki/ospakur'>Óspakur</a>, and arranging alliances between powerful families through marriages, including Oddur's marriage to Ragnheiður, the daughter of Gellir Þorkelsson.",
+
+        "Throughout the saga, Ófeigur displays his wisdom and cunning, helping Oddur navigate various challenges and ultimately ensuring the prosperity and happiness of his family. By the end of the story, Ófeigur's relationship with Oddur has grown stronger, and they part on loving terms."],
+        subsections:[]
+    },
+    {
+        id: "Legacy",
+        name: "Legacy",
+        text:["Ófeigur's story in the Icelandic saga serves as an example of the importance of wisdom, cunning, and the ability to navigate complex social situations. His character also emphasizes the significance of family ties and the power of alliances in the saga's world. Ófeigur's actions and decisions leave a lasting impact on the lives of the characters in the story, shaping the course of their lives and the alliances between families for generations to come."],
+        subsections:[]
+    },
+];
+---
+<WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
+    <h4>Ófeigur Skíðason</h4>
+    <div class="sidebar_table">
+        <div class="attr">Story</div>
+        <div class="val"><a href="/wiki/bandamannasaga">Bandamannasaga</a></div>
+
+        <div class="attr">Occupation</div>
+        <div class="val">Farmer, influential figure</div>
+
+        <div class="attr">Spouse</div>
+        <div class="val">Þorgerður</div>
+
+        <div class="attr">Children</div>
+        <div class="val"><a href="/wiki/oddur">Oddur</a></div>
+
+        <div class="attr">Residence</div>
+        <div class="val">Miðfirði, Iceland</div>
+
+        <div class="attr">Nationality</div>
+        <div class="val">Icelandic</div>
+
+        <div class="attr">Notable events</div>
+        <div class="val">Resolution of legal disputes, arranging alliances, and reconciliation with his son</div>
+    </div>
+
+</WikiLayout>
