@@ -1,0 +1,50 @@
+---
+import WikiLayout from "../../layouts/WikiLayout.astro";
+
+const pageTitle="Eiríkur the red";
+const image="/eirikur.png";
+const overview = "Eiríkur the Red (Old Norse: Eiríkr rauði) is a legendary Norse explorer who is credited with the discovery and settlement of Greenland. He appears as a central character in the medieval Icelandic sagas, The Saga of the Greenlanders and The Saga of Eirík the Red.";
+const chapters=[
+    {
+        id: "Early_Life",
+        name: "Early Life",
+        text:[
+            "Eiríkur was born in Norway, the son of Þorvaldur. Due to conflicts in their homeland, they settled in Iceland. After his father's death, Eiríkur married Þjóðhildur and established a farm in the north. He later faced conflicts with other settlers, which led to bloodshed and his exile.",
+
+            "During his exile, Eiríkur decided to search for the land seen by Gunnbjörn, son of Úlfur kráka, to the west. He set sail and explored the region, naming it Greenland to attract settlers. He spent three winters in Greenland, exploring the coast and giving names to various locations. Afterward, Eiríkur returned to Iceland, where he reconciled with his enemies and began recruiting settlers for Greenland.",
+
+            "Eiríkur was married to Þjóðhildur, with whom he had two sons, Þorsteinn and Leifur. The latter brought Christianity to Greenland, leading to the conversion of many inhabitants, including Þjóðhildur. Þorsteinn Eiríksson later led an expedition to the lands discovered by his brother but faced difficulties and eventually returned to Greenland."
+        ],
+        subsections:[]
+    },
+    {
+        id: "Legacy",
+        name: "Legacy",
+        text:["Eiríkur the Red's discoveries and settlements in Greenland paved the way for further exploration and settlement of North America by Norse people. His story is an integral part of the Icelandic sagas, which provide a glimpse into the lives and adventures of the Norse people during the Viking Age."],
+        subsections:[]
+    },
+];
+---
+<WikiLayout pageTitle={pageTitle} image={image} overview={overview} chapters={chapters}>
+    <h4>Eiríkur the Red</h4>
+    <div class="sidebar_table">
+        <div class="attr">Story</div>
+        <div class="val"><a href="/wiki/eirikssagarauda">Eiríks saga rauða</a></div>
+
+        <div class="attr">Spouse</div>
+        <div class="val">Þjóðhildur</div>
+
+        <div class="attr">Children</div>
+        <div class="val">Þorsteinn Eiríksson, Leifur Eiríksson</div>
+
+        <div class="attr">Relatives</div>
+        <div class="val">Þorvaldur (father)</div>
+
+        <div class="attr">Nationality</div>
+        <div class="val">Icelandic</div>
+
+        <div class="attr">Occupation</div>
+        <div class="val">Explorer, settler</div>
+    </div>
+
+</WikiLayout>
